@@ -1,0 +1,38 @@
+# app.json (Heroku Deploy)
+{
+  "name": "Telegram Security Bot",
+  "description": "Advanced Telegram Group Security Bot with Ban/Mute/Anti-Link/Anti-Abuse features",
+  "keywords": ["telegram", "security", "bot", "telethon", "admin"],
+  "repository": "https://github.com/yourusername/security-bot",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your bot token from @BotFather",
+      "required": true
+    },
+    "API_ID": {
+      "description": "API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "API Hash from my.telegram.org",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "MongoDB connection URI (use MongoDB Atlas for free)",
+      "required": true
+    },
+    "LOG_CHANNEL": {
+      "description": "Username or ID of log channel (e.g., @logchannel)",
+      "required": false
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram user ID",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
