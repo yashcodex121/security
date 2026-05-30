@@ -6,9 +6,11 @@ import logging
 from datetime import datetime, timedelta
 from telethon import TelegramClient, events, Button
 from telethon.tl.types import (
-    MessageEntityTextUrl, MessageEntityUrl, 
-    ChannelBannedRights, ChatBannedRights, 
-    MessageEntityMention, MessageEntityHashtag,
+    MessageEntityTextUrl,
+    MessageEntityUrl,
+    ChatBannedRights,
+    MessageEntityMention,
+    MessageEntityHashtag,
     User, Chat, Channel
 )
 from telethon.tl.functions.channels import EditBannedRequest
